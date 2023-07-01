@@ -23,3 +23,5 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// modal.style.display = "block";
