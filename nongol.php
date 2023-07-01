@@ -24,6 +24,7 @@ add_action('wp_enqueue_scripts', 'nongol_scripts');
 
 // Modal DOM.
 function modal_dom(){
-    include( plugin_dir_path( __FILE__ ) . 'views/modal.php');
+    include plugin_dir_path(__FILE__) . 'views/button.php';
+    include plugin_dir_path(__FILE__) . 'views/modal-1.php';
 }
 add_action('wp_footer', 'modal_dom');
