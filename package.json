@@ -1,0 +1,82 @@
+{
+  "name": "nongol-framework",
+  "version": "0.3.0",
+  "description": "Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Blocks, ESLint, Prettier, and more.",
+  "scripts": {
+    "build": "grunt run build",
+    "build:wp": "wp-scripts build",
+    "watch:wp": "wp-scripts start",
+    "release": "nongolenv release-it --",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artistudioxyz/nongol-framework.git"
+  },
+  "author": "Agung Sundoro",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/artistudioxyz/nongol-framework/issues"
+  },
+  "homepage": "https://github.com/artistudioxyz/nongol-framework#readme",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@prettier/plugin-php": "^0.19.2",
+    "@release-it/bumper": "^4.0.0",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "@wordpress/block-library": "^8.0.0",
+    "@wordpress/blocks": "^12.0.0",
+    "@wordpress/components": "^23.0.0",
+    "@wordpress/scripts": "^25.0.0",
+    "autoprefixer": "^10.2.6",
+    "nongolenv-cli": "^6.0.0",
+    "eslint": "^8.30.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "grunt": "^1.4.1",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-shell": "^3.0.1",
+    "husky": "^8.0.2",
+    "node-sass": "^7.0.3",
+    "prettier": "^2.8.1",
+    "prettier-plugin-svelte": "^2.9.0",
+    "release-it": "^15.5.1",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.1.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "sass": "1.57.0",
+    "shelljs": "^0.8.5",
+    "tailwindcss": "^2.1.2",
+    "ts-loader": "^9.2.6",
+    "tslib": "^2.0.0",
+    "svelte": "^3.55.0",
+    "typescript": "^4.5.4",
+    "vite": "^4.0.0",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "lint-staged": {
+    "assets/components/**/*.{js,svelte}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "assets/js/**/*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "assets/css/**/*.{css,scss}": "npx prettier --write",
+    "src/**/*.php": "prettier --write",
+    "src/template-parts/**/*.php": "prettier --write"
+  }
+}

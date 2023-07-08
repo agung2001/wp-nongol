@@ -1,30 +1,25 @@
 <?php
 /*
  * Plugin Name:       Nongol
- * Plugin URI:        https://example.com/plugins/the-basics/
- * Description:       Simple modal and popup plugin.
+ * Plugin URI:        https://github.com/artistudioxyz/nongol-framework
+ * Description:       Just another WordPress Plugin and Theme boilerplate with TailwindCSS, SASS, Blocks, ESLint, Prettier, and more.
  * Version:           0.0.1
- * Requires at least: 5.2
- * Requires PHP:      7.2
  * Author:            Agung Sundoro
  * Author URI:        https://agung2001.github.io
- * License:           GPL v2 or later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Update URI:        https://example.com/my-plugin/
- * Text Domain:       my-nongol-plugin
- * Domain Path:       /languages
- */
+ * License:           GPL-3.0
+ * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
+ *
+ * SOFTWARE LICENSE INFORMATION
+ *
+ * For detailed information regards to the licensing of
+ * this software, please review the license.txt
+*/
 
-// Enqueue css and js for the plugin.
-function nongol_scripts(){
-    wp_enqueue_style('nongol-style', plugins_url('assets/css/style.css', __FILE__));
-    wp_enqueue_script('nongol-script', plugins_url('assets/js/script.js', __FILE__), array('jquery'), '1.0.0', true);
-}
-add_action('wp_enqueue_scripts', 'nongol_scripts');
+! defined( 'WPINC ' ) || die;
 
-// Modal DOM.
-function modal_dom(){
-    include plugin_dir_path(__FILE__) . 'views/button.php';
-    include plugin_dir_path(__FILE__) . 'views/modal-1.php';
-}
-add_action('wp_footer', 'modal_dom');
+/** Load Composer Vendor */
+require plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+
+/** Initiate Plugin */
+$nongol = new Nongol\Plugin();
+$nongol->run();

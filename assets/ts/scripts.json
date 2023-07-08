@@ -1,0 +1,10 @@
+[
+  {
+    "name": "frontend",
+    "entry": "./assets/ts/frontend/frontend.ts",
+    "output": {
+      "filename": "frontend.min.js",
+      "path": "assets/build/js/frontend"
+    }
+  }
+]

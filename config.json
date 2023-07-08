@@ -1,0 +1,46 @@
+{
+  "name": "Nongol",
+  "version": "0.3.0",
+  "production": true,
+  "premium": false,
+  "description": "Nongol Framework",
+  "enableHooks": [
+    "action",
+    "filter",
+    "shortcode"
+  ],
+  "default": {
+    "nongol_animation": {
+      "enable": 1,
+      "elements": {
+        "logo": "bounceIn",
+        "tab": "heartBeat",
+        "content": "fadeIn",
+        "nongol_active": "fadeIn",
+        "nongol_inactive": "fadeOut"
+      }
+    },
+    "nongol_assets": {
+      "backend": {
+        "nongol-fontawesome-css": {
+          "status": true,
+          "type": "css",
+          "src": "vendor/fontawesome/css/all.min.css"
+        }
+      },
+      "frontend": {
+        "nongol-chart-js": {
+          "status": true,
+          "type": "js",
+          "src": "vendor/chartjs/chart.js"
+        },
+        "nongol-fontawesome-css": {
+          "status": true,
+          "type": "css",
+          "src": "vendor/fontawesome/css/all.min.css"
+        }
+      }
+    },
+    "nongol_hooks": []
+  }
+}
