@@ -1,6 +1,6 @@
 # Kata WordPress Plugin - Episode 2
 
-[![Watch the video](https://img.youtube.com/vi/xbTiYXXkF-w/maxresdefault.jpg)](https://youtu.be/xbTiYXXkF-w)
+[![Watch the video](https://img.youtube.com/vi/kYyBj3_uICE/maxresdefault.jpg)](https://youtu.be/kYyBj3_uICE)
 
 ### 🤖 Installation
 - Clone this repository to your plugins directory
